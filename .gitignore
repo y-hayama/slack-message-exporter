@@ -1,3 +1,5 @@
+*.properties
+
 #
 # Standard Maven .gitignore
 #
