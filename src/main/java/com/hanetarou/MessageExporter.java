@@ -36,7 +36,7 @@ public final class MessageExporter {
         // Slackの過去メッセージをエクスポートする
         JSONObject slack;
         SlackDao slackdao = new DaoFactory().getSlackDao(config.getSlackToken());
-        BufferedWriter bw = Files.newBufferedWriter(Paths.get("slack.json"), Charset.defaultCharset());
+        BufferedWriter bw = Files.newBufferedWriter(Paths.get(config.getSlackLog()), Charset.defaultCharset());
         do {
             System.out.println("export " + new Date((long)(latest * 1000)).toString() + " to " + new Date((long)(oldest * 1000)).toString());
 
