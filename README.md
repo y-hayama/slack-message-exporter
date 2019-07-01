@@ -1,5 +1,5 @@
 ## private channelのメッセージをエクスポートする
-### 必要なプロパティ
+### env.properties に必要なプロパティ
 - SLACK_TOKEN=xxxx
 - SLACK_CHANNEL_ID=xxxx
 - SLACK_OLDEST_DATE=yyyy/mm/dd
